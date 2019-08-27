@@ -1,0 +1,102 @@
+<script src="../../lib/echart/js/echarts.js"></script>
+
+<!-- 我的账户 -->
+<div class="myAccount">
+    <div class="row t-uc-top">
+        <div class="col-md-5">
+            <p>Hello,&nbsp;</p>
+            <small class="myuser">150****9808</small>
+            
+            <div class="img-wrap">
+                <img src="../../images/self_icon1.png" alt="">
+                <img src="../../images/phonecheck2.png" alt="" class="ml10">
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+                <p>昵称</p>
+                <small id="nickname">150****9808</small>
+                <p>上次登录时间</p>
+                <small id="lastlogintime">150****9808</small>
+
+        </div>
+        <div class="col-md-3">
+            <p class="tright"><a href="">
+                    尚未风险测评
+                </a></p>
+        </div>
+        <div class="col-md-12">
+                <ul class="tips">
+                        <li>如果您需要修改或更正个人信息，请联系客服。</li>
+                </ul>
+        </div>
+    </div>
+    <div class="seeAccount">
+        <div class="row mb20">
+            <div class="col-md-12 p0">
+                <p class="accountAll">账户总览</p>
+                <div class="row sa_content ">
+                    <div class="col-md-1 p0"><img src="../../images/ucall1.png" alt=""></div>
+                    <div class="col-md-2 p0">
+                        <p class="rp1" ><span id="usablemoney">0.00</span>元</p>
+                        <p class="rp2">持有中可用出借本金</p>
+                        
+
+                               
+                    </div>
+                    <div class="col-md-2 p0">
+                        <p class="rp1" ><span id="blockedmoney">0.00</span>元</p>
+                        <p class="rp2" >持有中冻结本金</p>
+                    </div>
+                    <div class="col-md-2 p0">
+                        <p class="rp1" ><span id="totalmoney">0.00</span>元</p>
+                        <p class="rp2">持有中出借总金额</p>
+                    </div>
+                    <div class="col-md-5">
+                         <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+                         <div id="chart" style="width: 400px;height:300px;"></div>
+                    </div>
+                </div>
+                <div class="detal-wrap">
+                    <ul class="sa_detail">
+                        <li>持有中出借本金：用户持有中标的出借服务的本金总额。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row t-uc-bottom">
+        <div class="col-md-8">
+            <p class="title">持有中出借服务</p>
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="../../images/triangle.jpg" alt="">
+                </div>
+                <div class="col-md-5 uc_rgroInfo">
+                    <p>持有中出借个数<br><span>0个</span></p>
+                    <p>出借总额（含续期本金）<br><span>￥0.00</span></p>
+                    <p class="tright"><a href="">查看更多</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 bdl">
+            <p class="title">站内消息</p>
+            <ul class="msg">
+            </ul>
+            <p class="tright"><a href="">查看更多</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="../../dist/js/myAccount.min.js"></script>
+<script>
+
+
+
+
+
+
+
+
+
+</script>

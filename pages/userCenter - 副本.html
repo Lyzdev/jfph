@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/reset.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/userCenter.min.css">
+
+
+</head>
+
+<body>
+    <!-- 用户中心 -->
+    <div id="userCenter" class=" container userCenter">
+        <!-- 侧导航 -->
+        <div class="row">
+            <div class="col-md-3 p0">
+                <ul class="userflnav clearfix">
+                    <li class="active"><a href="#" target="_self" class="chon chon1">我的账户</a></li>
+                    <li class="newp-warp"><a href="#" target="_self" class="chon chon2">我的出借</a>
+                        <dl class="new-prd" style="display: none;">
+                            <dd id="change_cj" class="li1"><a href="#" class="li-dd-blue">优选出借</a></dd>
+                            <dd id="change_sb" class="li2"><a href="#">精选标出借</a>
+                            </dd>
+                            <dd id="change_g" class="li3" style="display: none"><a href="#" target="_self">月薪投</a></dd>
+                            <dd id="change_h" class="li4" style="display: none;"><a href="#" target="_self"
+                                    class="chon6" id="billbutton">微银票</a></dd>
+                        </dl>
+                    </li>
+                    <li class="yqjlcx"><a href="#" target="_self" class="chon chon3">我的借款</a>
+                        <dl class="new-prd" style="display:none">
+                            <dd class="li4">
+                                <a href="#" class="li-dd-blue">逾期记录查询</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li><a href="#" target="_self" class="chon chon4">账号设置</a></li>
+                    <li><a href="#" target="_self" class="chon chon5">消息中心</a></li>
+                    <li class="yhkq">
+                        <a href="#" target="_self" class=" chon chon6">优惠卡券<span id="ctips"></span></a>
+                        <dl class="new-prd" style="display:none">
+                            <dd class="li4">
+                                <a href="#" class="li-dd-blue">会员回馈</a>
+                            </dd>
+                            <dd class="li4">
+                                <a href="#" class="li-dd-blue">抵用券</a>
+                            </dd>
+                        </dl>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-9 p0">
+
+                <!-- 我的账户 -->
+                <!-- <div class="myAccount">
+                        <div class="row t-uc-top">
+                                <div class="col-md-5">
+                                        <p>Hello,&nbsp;</p>
+                                        <small>150****9808</small>
+                                        <div class="img-wrap">
+                                            <img src="../images/self_icon1.png" alt="">
+                                            <img src="../images/phonecheck2.png" alt="" class="ml10">
+                                        </div>
+                                        <ul class="tips">
+                                                <li>如果您需要修改或更正个人信息，请联系客服。</li>
+                                            </ul>
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="tright"><a href="">
+                                        尚未风险测评
+                                    </a></p>
+                                        
+                                </div>
+                        </div>
+                        <div class="seeAccount">
+                            <div class="row mb20">
+                                <div class="col-md-12 p0">
+                                    <p class="accountAll">账户总览</p>
+                                    <div class="row sa_content ">
+                                        <div class="col-md-1 p0"><img src="../images/ucall1.png" alt=""></div>
+                                        <div class="col-md-11 p0">
+                                            <p class="rp1">0.00</p>
+                                            <p class="rp2">持有中出借本金</p>
+                                        </div>
+                                    </div>
+                                    <div class="detal-wrap">
+                                            <ul class="sa_detail">
+                                                    <li>持有中出借本金：用户持有中标的出借服务的本金总额。</li>
+                                                    </ul>
+
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row t-uc-bottom">
+                            <div class="col-md-8">
+                                    <p class="title">持有中出借服务</p>
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <img src="../images/triangle.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-5 uc_rgroInfo">
+                                            <p>持有中出借个数<br><span>0个</span></p>
+                                            <p>出借总额（含续期本金）<br><span>￥0.00</span></p>
+                                            <p class="tright"><a href="">查看更多</a></p>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <div class="col-md-4 bdl">
+                                    <p class="title">站内消息</p>
+                                    <ul class="msg">
+
+                                    </ul>
+                                    <p class="tright"><a href="">查看更多</a></p>
+
+                            </div>
+
+                        </div>
+
+                </div> -->
+                <!-- 优选出借 -->
+                <!-- <div class="choiceBorrow">
+                    <h2>出借记录</h2>
+                    <div class="tabs_jh">
+                        <ul class="menuf p0 ">
+                            <li class="tabFocus"><a href="">持有中<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+                            <li><a href="">已结束<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+
+                        </ul>
+
+
+
+                    </div>
+                    <div class="touz-list-title">
+                        <ul>
+                            <li class="touz-list1"><span style="margin-right:15px;">出借订单</span>共<span
+                                    class="touzi-lspan">0</span>个</li>
+                            <li class="touz-list2"><span style="margin-right:8px;">出借总额（含续期本金）</span><span
+                                    class="touzi-lspan">￥0.00</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="op_page yhq_page">
+                        <input type="hidden" id="pageDomId_orderid" value="page">
+                  
+
+                        <span class="pevr"><</span>
+                        <span class="active">1</span>
+                        <span class="next">></span>
+                   
+                        <span class="wz">跳转到</span>
+                        <span><input value="1" type="text" id="_toPage_orderid" name="“goSearchNum”"></span>
+                        <span><a href="javascript:void(0);" 
+                                class="active">GO</a></span>
+                        
+                    </div>
+
+                </div> -->
+
+                <!-- 精选标出借 -->
+                <!-- <div class="bestChoiceBorrow">
+                    <h2>精选标出借记录</h2>
+                    <div class="tabs_jh">
+                        <ul class="menuf p0 ">
+                            <li class="tabFocus"><a href="">还款中<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+                            <li class=""><a href="">进行中<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+                            <li class=""><a href="">转让中<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+                            <li><a href="">已结束<span>0</span></a>
+                                <span style="float:right;color:#e5e5e5">|</span></li>
+
+                        </ul>
+
+
+
+                    </div>
+                    <div class="touz-list-title">
+                        <ul>
+                            <li class="touz-list1"><span style="margin-right:15px;">出借订单</span>共<span
+                                    class="touzi-lspan">0</span>个</li>
+                            <li class="touz-list2"><span style="margin-right:8px;">出借总额（含续期本金）</span><span
+                                    class="touzi-lspan">￥0.00</span></li>
+                        </ul>
+                    </div>
+
+                    
+                    <p class="sb_user_nodata">无还款中订单</p>
+
+                    <div class="op_page yhq_page">
+                        <input type="hidden" id="pageDomId_orderid" value="page">
+                        
+
+                        <span class="pevr">
+                            <</span> <span class="active">1
+                        </span>
+                        <span class="next">></span>
+                        
+                        <span class="wz">跳转到</span>
+                        <span><input value="1" type="text" id="_toPage_orderid" name="“goSearchNum”"></span>
+                        <span><a href="javascript:void(0);" class="active">GO</a></span>
+
+                    </div>
+
+                </div> -->
+
+                <!-- 我的借款 -->
+                <!-- <div class="myBorrow">
+                    <div class="index-top clearfix">
+                        <div class="top-left fl">
+                            <div class="level">暂无评级
+
+                            </div>
+                            <div class="level-rate">
+                                -
+                            </div>
+                        </div>
+                        <div class="top-right fl">
+                            <h2 class="tr-title">信用解读</h2>
+                            <p>信用解读： <a>您还没有实名认证，去实名认证></a>
+                            </p>
+                            <div class="record-wrap">
+                                <div class="record-left">
+                                    <img src="../images/ring.png" alt="">
+                                    <span>逾期未还：<em>0</em>笔</span>
+
+                                </div>
+                                <div class="record-right">
+                                        <img src="../images/hammer.png" alt="">
+                                        <span>强制处理：<em>0</em>笔</span>
+    
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="vx-good">
+                        <img src="../images/no-record.png" alt="">
+
+                    </div>
+
+                </div> -->
+
+                <!-- 账号设置 -->
+                <!-- <div class="accountSetting">
+                    <div class="churtitle">账号设置</div>
+                    <div class="chursubtitle">账号信息</div>
+                    <div class="chcapfr">
+                        <dl>
+                            <dd>
+                                <span>手机号码：</span>
+                                <div class="fwb">150*****808</div>
+                            </dd>
+                            <dd>
+                                <span>证件信息：</span>
+                                <div>保障账户安全，只有完成实名认证才能出借</div>
+                                <a href="#">绑定</a>
+                            </dd>
+                            <dd>
+                                <span>登录密码：</span>
+                                <div>经常修改密码，保护账号安全</div>
+                                <a href="#">修改</a>
+
+                            </dd>
+                            <dd>
+                                <span>注销账户：</span>
+                                <div>注销账号</div>
+                                <a href="#">注销账号</a>
+
+                            </dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="chursubtitle">收货地址</div>
+                    <div class="open">
+                        <div class="open-user">
+                            <p class="open-cont">
+                                为了保证能正常收到礼品，请填写详细的收货地址和邮编信息。
+                            </p>
+                            <div class="open-btn">
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="">
+                                            立即添加
+                                        </a></dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chursubtitle">个人信息</div>
+                    <div class="open ">
+                        <form action="#">
+
+                            <ul class="person-info clearfix">
+                                <li>
+                                    性别：<select class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="male">男</option>
+                                        <option value="female">女</option>
+                                    </select>
+
+                                </li>
+                                <li>
+                                    行业：<select class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="">IT/互联网/通信/电子</option>
+                                        <option value="">金融/出借/财会</option>
+                                        <option value="">广告/媒体/出版/艺术</option>
+                                        <option value="">市场/销售/客服</option>
+                                        <option value="">人事/行政/管理</option>
+                                        <option value="">建筑/房产/物业</option>
+                                        <option value="">消费品/贸易/物流</option>
+                                        <option value="">咨询/法律/认证</option>
+                                        <option value="">咨询/法律/认证</option>
+                                        <option value="">生物/制药/医疗/护理</option>
+                                        <option value="">教育/培训/翻译</option>
+                                        <option value="">科研/环保/休闲/其他</option>
+
+                                    </select>
+
+                                </li>
+                                <li>
+                                    出生日期：
+                                    <input type="text" class="form-control" aria-describedby="basic-addon2">
+
+                                </li>
+                                <li>
+                                    家庭年收入：<select class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="">5万以下</option>
+                                        <option value="">5万-10万</option>
+                                        <option value="">10万-20万</option>
+                                        <option value="">20万-50万</option>
+                                        <option value="">50万-100万</option>
+                                        <option value="">100万以上</option>
+
+                                    </select>
+
+                                </li>
+                                <li>
+                                    婚姻状况：
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+
+                                        <option value="">已婚</option>
+                                        <option value="">未婚</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    最高学历：
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="">高中以下</option>
+                                        <option value="">高中</option>
+                                        <option value="">专科</option>
+                                        <option value="">本科</option>
+                                        <option value="">研究生</option>
+                                        <option value="">博士及以上</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <div class="open-btn">
+                                <dl>
+                                    <dt></dt>
+                                    
+                                    <dd class="ml120"><input type="submit" value="确认" ></dd>
+                                    <dd ><input type="button" value="取消" class="cancel"></dd>
+                                </dl>
+
+                            </div>
+
+
+
+                            
+
+
+                        </form>
+
+                    </div>
+
+                    <div class="chursubtitle">隐私政策</div>
+                    <div class="chursubtitle"><a href="">《用户隐私政策》</a></div>
+                    <div class="chursubtitle"></div>
+
+
+
+
+
+
+                </div> -->
+
+                <!-- 消息中心 -->
+                <div class="messageCenter">
+                    <div class="churtitle">
+                        我的消息
+                    </div>
+                    <div class="infopage clearfix">
+                            <div class="fl"><span class="checkbox fl">
+                                <input type="checkbox" name="checkall" class="checkAll" >
+                                </span> <span class="allchoic">全选</span>
+                                <div class="fl operbut">
+                                  <input type="button" value="标记为已读" onclick="readAlready()">
+                                  <input type="button" value="删除" class="but1" onclick="deleteall()">
+                                </div>
+                              </div>
+                              <div class="fr page_info"> 
+                                  <a href="https://8.9fpuhui.com/userCenter/wlcUserMessage.html" target="_self">首页</a> <span>0/0 页</span>  
+                      <a href="javascript:jumpToPage(-1)" target="_self">上一页</a>
+                                  <a href="javascript:void(0)" target="_self">下一页</a> 
+                                  <span>跳转</span>
+                                <form action="https://8.9fpuhui.com/userCenter/wlcUserMessage.html" method="post" name="goSearch" id="goSearch" class="fl">
+                                    <input type="text" class="active" name="goSearchNum" value="" onblur="floatOnly2(0, this.value)">
+                                    <input type="hidden" name="pageNum" value="">
+                                    <input type="submit" value="GO" class="normol">
+                                </form>
+                              </div>
+                              
+                    </div>
+
+                    <div class="infolist">
+                            <ul>
+                            </ul>
+                             <p class="active">暂无消息通知！</p>
+                          </div>
+
+                    <div class="infopage clearfix">
+                            <div class="fl"><span class="checkbox fl">
+                                <input type="checkbox" name="checkall" class="checkAll" >
+                                </span> <span class="allchoic">全选</span>
+                                <div class="fl operbut">
+                                  <input type="button" value="标记为已读" onclick="readAlready()">
+                                  <input type="button" value="删除" class="but1" onclick="deleteall()">
+                                </div>
+                              </div>
+                              <div class="fr page_info"> 
+                                  <a href="https://8.9fpuhui.com/userCenter/wlcUserMessage.html" target="_self">首页</a> <span>0/0 页</span>  
+                      <a href="javascript:jumpToPage(-1)" target="_self">上一页</a>
+                                  <a href="javascript:void(0)" target="_self">下一页</a> 
+                                  <span>跳转</span>
+                                <form action="https://8.9fpuhui.com/userCenter/wlcUserMessage.html" method="post" name="goSearch" id="goSearch" class="fl">
+                                    <input type="text" class="active" name="goSearchNum" value="" onblur="floatOnly2(0, this.value)">
+                                    <input type="hidden" name="pageNum" value="">
+                                    <input type="submit" value="GO" class="normol">
+                                </form>
+                              </div>
+                              
+                    </div>
+
+                </div>
+
+
+                <!-- 优惠卡券 -->
+                <!-- 会员回馈 -->
+                <!-- <div class="memberBack">
+                    <div class="title">
+                        <p>会员回馈<a href="">使用规则</a></p>
+                        
+                    </div>
+                    <div class="user-info user-jx-bg">
+                        <div class="noquan-wrap">
+                                <p class="noquan-info">更多送券活动即将展开，敬请期待！</p>
+                        </div>
+
+                    </div>
+
+                </div> -->
+
+                <!-- 抵用券 -->
+                <!-- <div class="userBack">
+                        <div class="title">
+                            <p>我的抵用券<a href="">使用规则</a></p>
+                            
+                        </div>
+                        <div class="user-info user-quan-bg">
+                            <div class="noquan-wrap">
+                                    <p class="noquan-info">更多送券活动即将展开，敬请期待！</p>
+                            </div>
+    
+                        </div>
+    
+                </div> -->
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3. 引入jquery.js -->
+    <script src="../lib/jquery/jquery-3.1.0.js"></script>
+    <!-- 4. 引入bootstrap.js -->
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- home.js -->
+    <script src="../js/userCenter.js"></script>
+
+</body>
+
+</html>

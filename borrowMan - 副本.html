@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/reset.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/css/borrowMan.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <p class="header-title">在线纠纷调解平台</p>
+    </div>
+    <div id="information">
+        <form action="#" class="from">
+            <!-- 第一行 姓名-->
+            <div class="f-one row">
+                <div class="col-md-1 line-h">姓名</div>
+                <div class="col-md-3">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"
+                        placeholder="您的名字">
+                </div>
+                <div class="col-md-1 line-h">手机号</div>
+                <div class="col-md-3">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                </div>
+                <div class="col-md-1 line-h">性别</div>
+                <div class="col-md-1"><select name="sex" id="sex">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select></div>
+            </div>
+            <!-- 第二行 身份证-->
+            <div class="f-two row">
+                <div class="col-md-1 line-h">身份证号</div>
+                <div class="col-md-10">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                </div>
+            </div>
+            <!-- 第三行 投诉标题 -->
+            <div class="f-two row">
+                <div class="col-md-1 line-h">投诉标题</div>
+                <div class="col-md-10">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"
+                        placeholder="请注明被投诉对象的企业名称及主要事由，如某商家出售假货">
+                </div>
+            </div>
+            <!-- 第四行 投诉对象 -->
+            <div class="f-four row ">
+                <div class="col-md-1 line-h">投诉对象</div>
+                <div class="col-md-4">
+                    <input class="form-control" id="disabledInput" type="text" placeholder="玖富" disabled>
+                </div>
+                <div class="col-md-1 line-h">业务类型</div>
+                <div class="col-md-4">
+                    <input class="form-control" id="disabledInput" type="text" placeholder="借款服务" disabled>
+                </div>
+            </div>
+            <!-- 第五行 投诉产品 -->
+            <div class="f-five row line-h">
+                <div class="col-md-1">
+                    投诉产品
+                </div>
+                <div class="col-md-8 row">
+                    <div class="col-md-3  choice">
+                        <input type="checkbox">
+                        <span>玖富叮当</span>
+                    </div>
+                    <div class="col-md-3 choice">
+                        <input type="checkbox">
+                        <span>玖富万卡</span>
+                    </div>
+                    <div class="col-md-3 choice">
+                        <input type="checkbox">
+                        <span>玖富超能</span>
+                    </div>
+                    <div class="col-md-3  choice">
+                        <input type="checkbox">
+                        <span>蜡笔分期</span>
+                    </div>
+                    <div class="col-md-3 choice">
+                        <input type="checkbox">
+                        <span>易美健</span>
+                    </div>
+                    <div class="col-md-3  choice">
+                        <input type="checkbox">
+                        <span>玖富商城</span>
+                    </div>
+                    <div class="col-md-3  choice">
+                        <input type="checkbox">
+                        <span>门店业务</span>
+                    </div>
+                    <div class="col-md-3  choice">
+                        <input type="checkbox">
+                        <span>其他</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第六行 投诉诉求 -->
+            <div class="f-six row ">
+                <div class="col-md-1 line-h">投诉诉求</div>
+                <div class="col-md-4">
+                    <select name="cho" id="cho">
+                        <option value="">换卡</option>
+                        <option value="">息费</option>
+                        <option value="">催收</option>
+                        <option value="">产品</option>
+                        <option value="">征信</option>
+                        <option value="">还款</option>
+                        <option value="">放款</option>
+                        <option value="">换卡</option>
+                        <option value="">结清</option>
+                        <option value="">额度</option>
+                        <option value="">取消借款</option>
+                        <option value="">其他</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 第7行 行业分类 -->
+            <div class="f-seven row ">
+                <div class="col-md-1 line-h">行业分类</div>
+                <div class="col-md-4">
+                    <select name="" id="">
+                        <option value="">
+                            互联网信息服务
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-1 line-h">消费金额</div>
+                <div class="col-md-4">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                </div>
+            </div>
+            <!-- 第8行 消费方式 -->
+            <div class="f-seven row ">
+                <div class="col-md-1 line-h">消费方式</div>
+                <div class="col-md-4">
+                    <select name="" id="">
+                        <option value="">
+                            在线消费
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-1 line-h">消费日期</div>
+                <div class="col-md-4">
+                    <input type="date" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                </div>
+            </div>
+            <!-- 第9行 消费地区 -->
+            <div class="f-nine row">
+                <div class="col-md-1 line-h">消费地区</div>
+                <div class="col-md-2">
+                    <select id="province" name="province" class="select">
+                        <option value="1000">
+                            上海市</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select id="province" name="province" class="select">
+                        <option value="1000">
+                            上海市</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                </div>
+            </div>
+            <!-- 第10行 投诉内容 -->
+            <div class="f-ten row">
+                <div class="col-md-1 line-h">
+                    投诉内容
+                </div>
+                <div class="col-md-9">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <!-- 第10行 企业联系人 -->
+            <div class="f-11 row ">
+                <div class="col-md-1 line-h">企业联系人</div>
+                <div class="col-md-4">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"
+                        placeholder="被投诉商家联系人">
+                </div>
+                <div class="col-md-1 line-h">联系方式</div>
+                <div class="col-md-4">
+                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"
+                        placeholder="被投诉商家联系方式">
+                </div>
+            </div>
+
+            <!--  投诉证据 -->
+            <div class="proof row">
+                <div class="col-md-1 line-h">
+                    投诉证据
+                </div>
+                <div class="class=col-md-8 r-content">
+                    <ul>
+                        <li class="list_p">
+                            <p class="list1-p1">说明：</p>
+                            <p class="list1-p2">1. 附件上传大小请不要超过2.5M，否则可能会上传失败<span>（请将上传图片中的个人隐私信息如：身份证号、姓名、银行卡号、家庭住址等用马赛克全部或部分遮挡）</span>
+                            </p>
+                            <p class="list1-p3">2. 附件选中上传后，会需要5-10秒时间处理，请在上传图片显示出来后，再进行下一步操作</p>
+                        </li>
+                        <li class="list_inp row">
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            <div>
+                                    <input type="file" >
+                                    <div class="inp-1">+</div>
+                            </div>
+                            
+
+
+                        </li>
+                        <li class="list_pp">
+                            <p>为加快投诉处理过程，请将消费金额，订单信息及快递单号等信息填写完整。</p>
+                            <p>为了尽快解决投诉，您的投诉可能被转发给商家来处理，我们进行督办。</p>
+                            <p>投诉人需保证投诉信息的真实性，投诉即视为授权本平台使用该投诉内容（使用范围包括但不限于中国质量万里行微博、微信、视频、海报、新闻稿件等）。</p>
+                            <p>消费投诉一旦提交不可删除，中国质量万里行消费投诉平台不接受任何不正当的投诉删帖请求。</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 保存  重置-->
+            <div class="affirm">
+                <input type="submit" value="保存" class="btn1">
+                <input type="reset" value="重置" class="btn2">
+            </div>
+
+            <div class="read">
+                    <input type="checkbox">
+                    <span>我已经详细阅读并同意 </span>
+                      
+                </div>
+    
+            <div class="ps">
+                    <p>尊敬的消费者：</p>    
+                    <p>如您的投诉在七天内未得到被投诉企业的回复，您是否同意委托中国质量万里行消费投诉平台代表您与被投诉企业协商沟通。</p>  
+                    <p> 上述服务均为免费行为，不会向投诉人收取任何费用。</p>   
+            </div>
+
+
+            
+        </form>
+    </div>
+    <div>
+        
+    </div>
+</body>
+
+</html>

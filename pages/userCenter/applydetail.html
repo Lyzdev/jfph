@@ -1,0 +1,80 @@
+<div class="applyDetail">
+    <div class="churtitle ">
+        <span class="applyDetail-type"></span>
+        借款发布表
+
+    </div>
+    <div class="chursubtitle"></div>
+    <div class="row ptb50">
+        <div class="col-md-1"></div>
+         <div class="col-md-8">
+            <form>
+                <div class="form-group">
+                    <label for="">借款金额/元</label>
+                    <input type="text" class="form-control" id="borrowmoney" placeholder="输入金额">
+                </div>
+                <div class="form-group">
+                    <label for="">借款利息/%</label>
+                    <input type="text" class="form-control" id="interest" placeholder="输入利息">
+                </div>
+
+                <div class="form-group">
+                    <label for="">借款期限/天</label>
+                    <select class="form-control" id="borrowtime">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="">还款方式&emsp;&emsp;&emsp;&emsp;</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="repaytype" value="0">按月分期
+                    </label>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <label class="radio-inline">
+                        <input type="radio" name="repaytype" value="1">按月到期
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="">最小投标/元</label>
+                    <input type="text" class="form-control" id="minbid" placeholder="输入金额">
+                </div>
+                <div class="form-group">
+                    <label for="">投标奖金/元</label>
+                    <input type="text" class="form-control" id="bouns" placeholder="输入金额">
+                </div>
+                <div class="form-group">
+                    <label for="">招标天数/天</label>
+                    <input type="text" class="form-control" id="days" placeholder="输入天数">
+                </div>
+                <div class="form-group">
+                    <label for="">借款标题</label>
+                    <input type="text" class="form-control" id="title" placeholder="输入金额">
+                </div>
+                <div class="form-group">
+                    <label for="">借款描述</label>
+                    <textarea class="form-control" rows="3" id="info"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2"><button type="button" id="apply-sub-btn" class="btn btn-danger btn-lg ">马上发布</button></div>
+                    <div class="col-md-6"></div>
+                </div>
+
+                
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+</div>
+
+
+<script src="../../dist/js/applyDetail.min.js"></script>

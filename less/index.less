@@ -1,0 +1,167 @@
+//            ^\s*(?=\r?$)\n
+@colorOrange: #E53E3E;
+@colorGray:#d0d0d0;
+.body{
+    background-color: #F6F8FB;
+}
+// 顶部导航
+.top-bar {
+    font-size: 14px;
+    color: #dde6ef;
+    background: #222222;
+    border-radius: 0;
+    min-height: 35px;
+    margin: 0;
+    .container {
+        padding: 0;
+        .navbar-collapse {
+            padding: 0;
+        }
+        .navbar-nav {
+            li {
+                a {
+                    color: #dde6ef;
+                    padding: 5px 12px;
+                }
+                &:hover {
+                    a {
+                        color: #dde6ef;
+                    }
+                }
+            }
+            li:hover a {
+                color: #dde6ef;
+            }
+        }
+        .navbar-collapse {
+            .navbar-right {
+                margin-right: 0;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+// 导航
+.menu-nav {
+    margin-bottom: 0;
+    padding: 14px 5px;
+    background: #fff;
+    .container {
+        padding: 0;
+        .navbar-collapse {
+            padding: 0;
+        }
+        .navbar-header {
+            .index-logo {
+                padding: 5px 0 5px 10px;
+            }
+        }
+        .navbar-nav {
+            &>li {
+                padding: 0 8px;
+            }
+            li {
+                &:hover {
+                    &>a {
+                        color: @colorOrange;
+                    }
+                    background: url(../images/nav-menu-line.png) repeat-x bottom;
+                    // border-bottom: 3px solid @colorOrange;
+                }
+                a {
+                    color: #4a4a4a;
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        background-image: url(../images/xiangxia.png);
+                    }
+                }
+                .dropdown-menu {
+                    top: 128%;
+                    left: -22px;
+                    border-radius: 5px;
+                    li {
+                        height:40px;
+                        a {
+                            height: 100%;
+                            font-size: 15px;
+                            line-height: 40px;
+                            text-align: center;
+                        }
+                        &:hover {
+                            &>a {
+                                color: #66B1FF;
+                            }
+                            border-bottom:0;
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        display:block;
+                        position: absolute;
+                        background-color: #fff;
+                        width: 10px;
+                        height: 10px;
+                        top:-6px;
+                        left:115px;
+                        transform: rotate(45deg);
+                        border: 1px solid rgba(0, 0, 0, .15);
+                        border-right: 1px solid transparent;
+                        border-bottom:1px solid transparent;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// 内容部分
+.content-wrap{
+    background-color: #F6F8FB;
+    min-height: 600px;
+}
+// 页脚
+.footer {
+    background: #1F2B3D;
+    padding: 27px 0;
+    color:#a0a1a2;
+    .container {
+            .contact{
+                color: @colorGray;
+                padding-top: 40px;
+                p {
+                    font-size: 14px;
+                    span{
+                        font-size: 12px;
+                    }
+                    a {
+                        color: @colorGray;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .link{
+                text-align: center;
+                dl{
+                    a{
+                        color:@colorGray;
+                    }
+                    dt{
+                        line-height:40px;
+                    }
+                    dd{
+                        a{
+                            color:#a0a1a2;
+                            font-size:12px;
+                            line-height:24px;
+                        }
+                    }
+                }
+                p{
+                    text-align: left;
+                }
+            }
+    }
+}

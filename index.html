@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. 定义视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玖富普惠官网-玖富集团旗下网络借贷信息服务平台</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./dist/css/reset.min.css">
+    <!-- 2. 引入bootstrap的css -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- swipper.css -->
+    <link rel="stylesheet" href="./lib/swipper/css/swiper.min.css">
+    <!-- 5. 引入自己写的css 注意: 自己写的css样式  要在框架样式之后引入 才能覆盖 -->
+    <link rel="stylesheet" href="./dist/css/common.css">
+    <link rel="stylesheet" href="./dist/css/index.min.css">
+    <!-- 各个模块样式引入 -->
+    <!-- login&register -->
+    <link rel="stylesheet" href="./dist/css/loginRegister.min.css">
+    <!-- home -->
+    <link rel="stylesheet" href="./dist/css/home.min.css">
+    <!-- optimization -->
+    <link rel="stylesheet" href="./dist/css/optimization.min.css">
+    <!-- protect -->
+    <link rel="stylesheet" href="./dist/css/protect.min.css">
+    <!-- userCenter -->
+    <link rel="stylesheet" href="./dist/css/userCenter.min.css">
+    <!-- introduction -->
+    <link rel="stylesheet" href="./dist/css/introduction.min.css">
+
+    <!-- 信息披露 -->
+    <link rel="stylesheet" href="./dist/css/informationpublish.min.css">
+    <!-- 我的借款 -->
+    <link rel="stylesheet" href="./dist/css/myborrow.min.css">
+
+    <!-- 地图 -->
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <link rel="stylesheet" href="./dist/css/contactus.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-default top-bar">
+        <div class="container">
+            <!-- 移动端头部按钮-->
+            <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav info-bar">
+                    <li class="info-bar-login"><a href="#login">登录</a></li>
+                    <li class="info-bar-register"><a href="#register">快速注册</a></li>
+                    <!-- <li><a href="#usercenter">个人中心</a></li> -->
+                    <li><a href="#">客服热线: <strong>400-810-8818</strong></a></li>
+                    <li><a href="#">投诉热线: <strong>400-810-1555</strong></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">举报投诉: <strong>010-64101100</strong></a></li>
+                    <li><a href="#">jubao@9fbank.com.cn</a></li>
+                    <li><a href="#">移动客户端</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default menu-nav">
+        <div class="container">
+            <!-- 移动端顶部导航 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand index-logo" href="#">
+                    <img src="./images/index-logo.png" alt="">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo-text.png" alt="">
+                </a>
+                <!-- <a class="navbar-brand" href="#">
+                        <img src="./images/xiangxia.png" alt="">
+                    </a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">我要借出 <img src="./images/xiangxia.png" alt=""></span></a>
+                        <ul class="dropdown-menu selfStyle">
+                            <li><a href="#optimization">优选出借</a></li>
+                            <li><a href="#select">精选标</a></li>
+                            <li><a href="#">债权转让</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">我要借款 <img src="./images/xiangxia.png" alt=""></a>
+                        <ul class="dropdown-menu selfStyle menu-borrow">
+                            <li ><a href="#myborrow" >我要借款</a></li>
+                            <!-- <li class="menu-apply"><a href="#usercenter/applyborrow">发布借款</a></li> -->
+                            <li><a href="#">逾期记录查询</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#knowledge">网贷知识</a></li>
+                    <li><a href="#informationpublish">信息披露</a></li>
+                    <li><a href="#protect">权益保护</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">关于我们 <img src="./images/xiangxia.png" alt=""></a>
+                        <ul class="dropdown-menu selfStyle">
+                            <li><a href="#introduction">玖富普惠</a></li>
+                            <li><a href="#">核心团队</a></li>
+                            <li><a href="#">核心团队</a></li>
+                            <li><a href="#">集团介绍</a></li>
+                            <li><a href="#">安全保障</a></li>
+                            <li><a href="#">监管报告</a></li>
+                            <li><a href="#">荣誉资质</a></li>
+                            <li><a href="#contactus">联系我们</a></li>
+                        </ul>
+                        <!-- <ul class="dropdown-menu">
+                            <li><a href="#">玖富普惠</a></li>
+                            <li><a href="#">核心团队</a></li>
+                            <li><a href="#">核心团队</a></li>
+                            <li><a href="#">集团介绍</a></li>
+                            <li><a href="#">安全保障</a></li>
+                            <li><a href="#">监管报告</a></li>
+                            <li><a href="#">荣誉资质</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 内容部分 -->
+    <div class="content-wrap">
+    </div>
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href=""><img src="./images/foot-logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 contact">
+                    <p>客服热线：400 - 810 - 8818&emsp;<span style="color:#9b9b9b;">9:30 - 21:00</span></p>
+                    <p>投诉热线：400 - 810 - 1555&emsp;<span style="color:#9b9b9b;">9:30 - 21:00</span></p>
+                    <p><span>违法不良信息举报：010-64101100 jubao@9fbank.com.cn</span></p>
+                    <p><span style="color:#fff">（工作日09:30-18:00）</span></p>
+                    <p><a href="">违法违规行为投诉</a></p>
+                    <p><a href="./borrowMan.html">在线纠纷解决平台</a></p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6 link">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <dl>
+                                        <dt><a href="">新手引导</a></dt>
+                                        <dd><a href="#register">注册登录</a></dd>
+                                        <dd><a href="">出借服务</a></dd>
+                                        <dd><a href="">安全保障</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="col-md-4">
+                                    <dl>
+                                        <dt><a href="">我要出借</a></dt>
+                                        <dd><a href="">优选出借</a></dd>
+                                        <dd><a href="">精选标</a></dd>
+                                        <dd><a href="">债权转让</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="col-md-4">
+                                    <dl>
+                                        <dt><a href="">我要借款</a></dt>
+                                        <dd><a href="">我要借款</a></dd>
+                                        <dd><a href="">逾期记录查询</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <dl>
+                                <dt><a href="">友情链接</a></dt>
+                                <dd><a href="">中国互联网金融协会</a></dd>
+                                <dd><a href="">中国人民银行官网</a></dd>
+                                <dd><a href="">中国银监会官网</a></dd>
+                                <dd><a href="">玖富数科科技集团有限责任公司</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <p>* 参考回报并非平台承诺回报，网贷有风险，出借需谨慎</p>
+                </div>
+            </div>
+            <div class="row ptb25">
+                <div class="col-md-12">
+                    玖富普惠遵照监管规定为您提供网贷信息中介服务。如监管规定变化，相关业务遵从监管规定变更。根据监管要求，玖富普惠不对任何客户提供本息出借的任何担保承诺。除引入保险及第三方担保措施外，出借风险由出借人自行评估与承担
+                </div>
+            </div>
+            <div class="row pt17">
+                <div class="col-md-12 tcenter ">
+                    北京玖富普惠信息技术有限公司，隶属玖富数科科技集团有限责任公司旗下平台 经营许可证编号：京B2-20170013 京ICP备16046424号-1 <img
+                        src="images/police.png">京公网安备 11010502034176号
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 pt5">
+                    <img src="./images/bottom1.png" alt="">
+                    <img src="./images/botton2.jpg" alt="">
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="test"></div>
+     <!-- 3. 引入jquery.js -->
+     <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 4. 引入bootstrap.js -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a3e000af23665c4bc21ac9508da98214"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a3e000af23665c4bc21ac9508da98214"></script>
+
+    <!-- 各个模块js引入 -->
+     <!-- index.js -->
+     <script src="./js/index.js"></script>
+</body>
+</html>
